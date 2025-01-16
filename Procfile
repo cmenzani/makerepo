@@ -1,1 +1,2 @@
-web: python makevideo2audio.py
+web: gunicorn makevideo2audio:app
+
