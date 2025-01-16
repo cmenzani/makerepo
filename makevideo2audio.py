@@ -1,6 +1,6 @@
 # creato da mio account ChatGPT
-import subprocess
 from flask import Flask, request, jsonify
+import subprocess
 
 app = Flask(__name__)
 
@@ -18,4 +18,5 @@ def download():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(debug=True, port=5000)
+
